@@ -16,7 +16,8 @@ h1 {
 	color: #ff7fbf;
 	font-weight: bold;
 	font-size: 50px;
-	text-shadow: 5px 5px white;
+	text-shadow: 2px 2px white;
+	font-family: cursive;
 }
 
 form {
