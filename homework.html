@@ -1,51 +1,22 @@
-<html lang="en"><head>
-  <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://kit.fontawesome.com/d6572b112b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../js_todo_homework/style.css">
 </head>
 <body>
-         <header>
-             <h1>Wish List</h1>
-         </header>
-         <form>
-            <input type="text" id="task" placeholder="Add your task here">
-             <i class="fas fa-star fa-2x shootingstar">
-             </i>
-         </form>
-         <main class="container">
-         <!-- 未完了のタスク -->
-             <h2 class="title">Not yet</h2>
-                <ul class="list" id="not-yet">
-                     <li class="list">英単語３０個！
-                         <div class="buttons">
-                            <button class="remove">
-                                 <i class="far fa-trash-alt"></i>
-                            </button>
-                            <button class="done">
-                                <i class="far fa-check-circle"></i>
-                            </button>
-                         </div>
-                     </li>
-                </ul>
-
-         <!-- 完了済みのタスク  -->
-             <h2 class="title">done</h2>
-                 <ul class="list" id="done">
-                     <li class="list">マラソン５キロ
-                         <div class="buttons">
-                            <button class="remove">
-                                 <i class="far fa-trash-alt"></i>
-                            </button>
-                            <button class="done">
-                                <i class="far fa-check-circle"></i>
-                            </button>
-                         </div>
-                     </li>
-                 </ul>
-         </main>
-<script src="assets/js/app.js"></script>
-
+    <div class="container">
+            <h1>To Do List</h1>
+            <form>
+                <input type="text" id="input" placeholder="Add your task here">
+                <input type="button" id="btn" value="Add">
+            </form>
+            <ul class="todo-list">
+                <!-- ここに要素が追加されていく -->
+            </ul>
+    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
