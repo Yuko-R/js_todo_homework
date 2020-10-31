@@ -8,19 +8,34 @@ ul {
 }
 body {
 	width: 100vw;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-image: url(../js_todo_homework/0e335d7b1b7070f73579d8e16f97f5be.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 40px;
-	width: 40%;
+	margin-top: 70px;
+	width: 450px;
+	height: 500px;
+    background-color: #f4b3c2;
+    background-image: url(../js_todo_homework/0e335d7b1b7070f73579d8e16f97f5be.png);
+    box-shadow: 1px 1px 1px 1px #727171;
+
 }
 h1 {
 	text-align: center;
+	padding-right: 30px;
+	color: #1e50a2;
+	font-weight: bold;
+	text-shadow: 0 10px 10px #e9546b;
+	font-family: "Ravi Prakash",cursive;
+	font-size: 40px;
 }
 form {
 	width: 100%;
@@ -32,16 +47,22 @@ input[type="text"] {
 	width: 75%;
 	padding: 3px 7px;
 	border: 1px solid #232b2b;
-	border-radius: 3px 0 0 3px;
+	border-radius: 7px 7px 7px 7px;
+	margin-left: 25px;
 }
-#btn {
-	width: 25%;
-	padding: 5px;
-	background-color: #093d86;
-	color: white;
-	border: none;
-	border-radius: 0 3px 3px 0;
-	cursor: pointer;
+
+h2 {
+	font-size: 25px;
+	text-align: left;
+	margin-left: 10px;
+	color: #241a08;
+}
+
+.buttons {
+	margin-left: 10px;
+}
+.star {
+	color: #4d5aaf;
 }
 
 .todo-list {
@@ -51,21 +72,35 @@ input[type="text"] {
 /* 追加されるリストアイテムのCSS */
 li {
 	height: 30px;
-	border: 1px solid rgb(187, 187, 187);
-	border-bottom: none;
+	width: 400px;
+	border: 3px solid;
+	border-color: #f4b3c2;
+	border-bottom: 20px;
 	padding: 3px 11px;
 	display: flex;
 	align-items: center;
+	border-radius: 7px 7px 7px 7px;
+	margin-left: 10px;
+	color: black;
 	/* ボタンが追加された時、タスクの内容とボタンを左右に配置 */
 	justify-content: space-between;
 }
 /* 最後のli要素のみ、border-bottomがある */
 li:last-child {
-	border-bottom: 1px solid rgb(187, 187, 187);
+	border-bottom: 3px solid;
+	border-color: #f4b3c2;
 }
 /* 追加されるリストアイテムのDeleteボタン */
-.delete {
+.button {
 	font-size: 12px;
-	color: rgb(202, 20, 20);
 	cursor: pointer;
+	padding: 3px;
+}
+
+.check {
+	color: #3eb370;
+}
+
+.trash{
+	color: red;
 }
